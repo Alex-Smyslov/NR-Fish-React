@@ -1,0 +1,23 @@
+.mobile__wrapp {
+	display: none;
+	margin: auto;
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+}
+
+.mobile__wrapp.isActive {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding-top: 15px;
+	width: 100%;
+	border-top: 2px solid var(--purple);
+} 
+
+.mobile__phone {
+	display: block;
+	margin-bottom: 10px;
+}

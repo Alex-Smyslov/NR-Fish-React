@@ -1,0 +1,108 @@
+.footer {
+	background-color: var(--footer-bg);
+	color: var(--footer-text);
+   margin-top: var(--m36);
+}
+
+.footer a {
+	color: var(--light-grey-color);
+	text-decoration: none;
+}
+
+.footer__wrapper {
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr; 
+	gap: var(--m36); 
+	grid-template-areas: 
+		"A B C"; 
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	padding-top: var(--m36);
+	padding-bottom: var(--m36);
+}
+
+.footer__column-1 {
+	grid-area: A;
+ }
+ .footer__column-2 {
+	grid-area: B;
+ }
+ .footer__column-3 {
+	grid-area: C;
+ }
+
+.footer__column-2 ul{
+    padding-left: 0;
+ }
+
+ .footer__column-2 ul{
+	 display: flex;
+	 flex-direction: column;
+	 gap: 20px;
+	padding-left: 0;
+}
+
+ .footer__wrapper-text,
+ .footer__wrapper a {
+	margin-bottom: 0;
+	font-family: var(--font-basic);
+	font-weight: var(--font-weight-300);
+	font-size: var(--font-size-16);
+	line-height: var(--line-height-130);
+	color: var(--light-grey-color);
+}
+
+.footer__wrapper a:hover {
+	color: var(--green-color);
+}
+
+.footer__politics {
+	margin-bottom: 40px;
+}
+
+.footer__feedback-email,
+.footer__feedback-adress,
+.footer__cash {
+	margin-top: 40px;
+}
+
+.footer__icons svg:hover {
+	transform: scale(1.1);
+	transition: 0.5s ease;
+}
+
+.footer-menu__item {
+	margin-bottom: 20px;
+}
+
+/* Media */
+
+
+@media screen and (max-width: 920px) {
+	.footer__wrapper {
+	  grid-template-rows: 1fr;
+	  grid-template-columns: 1fr 1fr; 
+	  grid-template-areas: 
+		  "A C";
+	  gap: 0;
+  }
+.footer__feedback-number {
+  margin-top: 20px;
+}
+
+.footer__column-2 ul{
+	display: none;
+}
+}
+
+@media screen and (max-width: 650px) {
+	.footer__wrapper {
+	  grid-template-rows: 1fr;
+	  grid-template-columns: 1fr; 
+	  grid-template-areas: 
+		  "A"
+		  "C";
+	  gap: 0;
+  }
+}
