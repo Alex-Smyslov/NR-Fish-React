@@ -3,14 +3,20 @@ import MainMenu from '../mainMenu/MainMenu';
 import MobileFooter from '../mobileFooter/MobileFooter';
 import './style.css';
 
-const Navbar = () => {
+interface TProps {
+  isMobile: boolean;
+  isOpenMenu: boolean;
+  changeVisibleNavMenu: () => void;
+}
+
+const Navbar = ({ isMobile, isOpenMenu, changeVisibleNavMenu }: TProps) => {
   return (
-    <nav className="nav-menu">
+    <nav className={`nav-menu ${isOpenMenu && isMobile ? 'isActive' : ''}`}>
       <div className="container">
         <div className="nav-menu_row">
-          <MainMenu />
+          <MainMenu changeVisibleNavMenu={changeVisibleNavMenu} />
           <BtnDarkMode />
-          <MobileFooter />
+          <MobileFooter isOpenMenu={isOpenMenu} isMobile={isMobile} />
         </div>
       </div>
     </nav>

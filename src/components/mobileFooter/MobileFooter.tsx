@@ -1,10 +1,15 @@
 import './mobileFooter.css';
 
-const MobileFooter = () => {
+interface TProps {
+  isOpenMenu: boolean;
+  isMobile: boolean;
+}
+
+const MobileFooter = ({ isOpenMenu, isMobile }: TProps) => {
   return (
-    <div className="mobile__wrapp">
-      <a className="phone mobile__phone" href="tel:+79960004574">
-        +7(996) 000 - 45 - 74
+    <div className={`mobile__wrapp ${isOpenMenu && isMobile ? 'isActive' : ''}`}>
+      <a className="phone mobile__phone" href="tel:+79103979890">
+        +7(910) 397 - 98 - 90
       </a>
       <br />
       <a className="mobile__btn modal--open" href="#!">

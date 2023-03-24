@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Logotype from '../logotype/Logotype';
 import MainMenu from '../mainMenu/MainMenu';
 import './Footer.css';
@@ -16,9 +17,9 @@ const Footer = () => {
               <p className="footer__politics-text">
                 &#169; 2012-{dateOut} Все права защищены
                 <br />
-                <a className="footer__politics-link" href="404.html">
+                <NavLink to="/not-found" className="footer__politics-link">
                   Политика конфидециальности
-                </a>
+                </NavLink>
               </p>
             </div>
             <div className="footer__politics">
@@ -45,11 +46,11 @@ const Footer = () => {
                 </a>
               </div>
               <div className="footer__feedback-adress adress">
-                <a className="email" href="email:andrey@mail.ru">
+                <p>
                   г. Нижний Новгород, ул. Ванеева д.93
                   <br />
                   Ежедневно с 9:00 до 18:00
-                </a>
+                </p>
               </div>
               <div className="footer__cash">
                 <div className="footer__icons">

@@ -7,6 +7,7 @@
 	position: relative;
 	display: flex;
 	justify-content: space-between;
+	gap: 8px;
 
 	width: 51px;
 	height: 26px;

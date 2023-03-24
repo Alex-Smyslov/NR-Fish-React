@@ -1,8 +1,8 @@
-/* Header */
 .header {
 	width: 100vw;
 	position: fixed;
 	background-color: var(--header-bg);
+	z-index: 10;
 }
 .header__wrapper {
 	display: flex;
@@ -17,7 +17,6 @@
 	z-index: 10;
 }
 
-/* Mobile menu */
 .hamburger-box {
 	width: 30px;
 	height: 24px;
@@ -82,27 +81,24 @@
 @media screen and (max-width: 800px) {
 	.nav-menu {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
-		padding: 50px 15px;
-		background-color: var(--black);
+		padding: 80px 15px;
 		transform: translateX(-100%);
 		transition: transform 0.5s;
 	}
 
 	.nav-menu.isActive {
+		overflow: hidden;
 		transform: translateX(0);
 	}
 
-	/* .nav-menu.isActive .nav-menu_row{
-		flex-direction: column;
-	} */
-	.nav-menu .nav-menu_row{
+	.nav-menu .nav-menu_row {
 		flex-direction: column;
 	}
 

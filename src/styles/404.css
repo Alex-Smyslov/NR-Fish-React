@@ -1,0 +1,26 @@
+.not-found__grid {
+	display: grid;
+	position: relative;
+	grid-template-rows: 1fr 2fr;
+	grid-template-areas:
+		"A"
+		"B";
+	gap: var(--m24);
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	padding: var(--m36) var(--m12);
+}
+
+.not-found__image {
+	grid-area: A;
+	width: 100%;
+}
+
+.not-found__bot {
+	grid-area: B;
+}
+
+.not-found__image img {
+	right: 20px;
+}

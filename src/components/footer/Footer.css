@@ -43,22 +43,38 @@
 	padding-left: 0;
 }
 
- .footer__wrapper-text,
- .footer__wrapper a {
-	margin-bottom: 0;
-	font-family: var(--font-basic);
-	font-weight: var(--font-weight-300);
-	font-size: var(--font-size-16);
-	line-height: var(--line-height-130);
-	color: var(--light-grey-color);
-}
-
-.footer__wrapper a:hover {
-	color: var(--green-color);
+.footer__wrapper .nav-list__link--active {
+	position: relative;
+	color: var(--purple);
 }
 
 .footer__politics {
+	margin-top: 20px;
 	margin-bottom: 40px;
+}
+
+.footer__politics a {
+	color: var(--purple);
+}
+
+.footer__politics-link {
+	position: relative;
+}
+
+.footer__politics-link::after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	background-color: var(--purple);
+	transform: scaleX(0);
+	transition: all 0.45s;
+}
+
+.footer__politics-link:hover::after {
+	transform: scaleX(1);
 }
 
 .footer__feedback-email,

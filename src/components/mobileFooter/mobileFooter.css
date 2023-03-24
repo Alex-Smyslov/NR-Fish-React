@@ -3,7 +3,6 @@
 	margin: auto;
 	position: absolute;
 	z-index: 10;
-	width: 100%;
 }
 
 .mobile__wrapp.isActive {
@@ -11,9 +10,10 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+	position: absolute;
+	bottom: 40px;
+	width: 90vw;
 	padding-top: 15px;
-	width: 100%;
 	border-top: 2px solid var(--purple);
 } 
 

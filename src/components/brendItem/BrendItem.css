@@ -1,0 +1,14 @@
+.brend-grid__item {
+	position: relative;
+	transition: 0.3s ease;
+}
+
+.brend-grid__item:hover {
+	transform: scale(1.05);
+	cursor: default;
+}
+
+.brend__pic {
+	display: block;
+	width: 250px;
+}
