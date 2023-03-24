@@ -12,7 +12,7 @@ const Projects = () => {
               <div className="about__content content" id="wrapp">
                 <div className="content__wrapper">
                   <SectionTitle text="О нас" />
-                  <div className="content__grid">
+                  {/* <div className="content__grid">
                     <div className="content__item">
                       <img src="assets/images/grid-icon1.svg" alt="" />
                       <p className="content__text">
@@ -41,50 +41,8 @@ const Projects = () => {
                       <img src="assets/images/grid-icon3.svg" alt="" />
                       <p className="content__text">Доставка в любую точку области</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
-              </div>
-              <div className="about__bubble">
-                <span className="dot"></span>
               </div>
             </div>
           </section>
@@ -92,7 +50,7 @@ const Projects = () => {
           <section className="section properties">
             <div className="container">
               <SectionTitle text="Преимущества работы с нами" />
-              <div className="properties__card_wrapp flex">
+              {/* <div className="properties__card_wrapp flex">
                 <div className="properties__card card">
                   <img className="card__image" src="assets/images/quality.png" alt="" />
                   <h4 className="card__title">Опыт работы с 2012 года</h4>
@@ -111,14 +69,14 @@ const Projects = () => {
                   <img className="card__image" src="assets/images/order.png" alt="" />
                   <h4 className="card__title">Принимаем предзаказы на любые товары</h4>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
 
           <section className="faq">
             <div className="container">
               <SectionTitle text="Часто задаваемые вопросы" />
-              <div className="faq__list flex">
+              {/* <div className="faq__list flex">
                 <div className="list">
                   <div className="list__item">
                     <div className="list__question question">
@@ -213,7 +171,7 @@ const Projects = () => {
                   <div className="faq__bubles buble3"></div>
                   <div className="faq__bubles buble4"></div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </section>
         </main>

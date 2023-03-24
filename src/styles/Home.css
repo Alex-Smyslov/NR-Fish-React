@@ -195,7 +195,6 @@ img {
 
 .brend {
 	margin-bottom: var(--m108);
-	padding: var(--m60);
 	background-color: var(--medium-grey-color);
 }
 
@@ -384,7 +383,6 @@ img {
 }
 
 @media screen and (max-width: 480px) {
-
 	.main-banner__wrapper,
 	.brend {
 		margin-bottom: var(--m60);

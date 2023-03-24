@@ -1,10 +1,15 @@
 import './BrendItem.css';
 import '../../helpers/brendsList.ts';
 
-const BrendItem = ({ key, img, alt }: { key: string; img: string; alt: string }) => {
+interface IBrendItem {
+  img: string;
+  alt: string;
+}
+
+const BrendItem = ({ img, alt }: IBrendItem) => {
   return (
     <div className="brend-grid__item">
-      <img className="brend__pic" key={key} src={img} alt={alt} />
+      <img className="brend__pic" src={img} alt={alt} />
     </div>
   );
 };

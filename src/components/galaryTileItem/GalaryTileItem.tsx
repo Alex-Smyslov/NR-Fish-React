@@ -1,9 +1,14 @@
 import './GalaryTileItem.css';
 
-const GalaryTileItem = ({ key, img, alt }: { key: string; img: string; alt: string }) => {
+interface IGalaryTileItem {
+  img: string;
+  alt: string;
+}
+
+const GalaryTileItem = ({ img, alt }: IGalaryTileItem) => {
   return (
     <div className="gallery__card">
-      <img className="gallery__card-pic" key={key} src={img} alt={alt} />
+      <img className="gallery__card-pic" src={img} alt={alt} />
     </div>
   );
 };
