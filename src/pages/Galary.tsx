@@ -1,7 +1,9 @@
 import SectionTitle from '../components/sectionTitle/SectionTitle';
 import GalaryTileItem from '../components/galaryTileItem/GalaryTileItem';
 import { galaryTile } from '../helpers/galaryTileList';
+// import SliderGalary from '../utils/galary';
 import '../styles/Galary.css';
+// import '../utils/sliderGalary';
 
 const Contacts = () => {
   return (

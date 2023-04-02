@@ -1,13 +1,15 @@
 .main-banner__wrapper {
+	height: 800px;
 	margin-bottom: var(--m108);
-	/* background-image: url(../images/main-banner.jpg); */
+	background-image: url(../img/main-banner.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	padding-top: 140px;
 }
 
-.main-banner__height {
-	height: 800px;
+.main-banner .section-title__border {
+	display: none;
 }
 
 .main-banner--text {
@@ -195,6 +197,7 @@ img {
 
 .brend {
 	margin-bottom: var(--m108);
+	padding: var(--m60);
 	background-color: var(--medium-grey-color);
 }
 
