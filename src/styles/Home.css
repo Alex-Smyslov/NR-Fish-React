@@ -1,7 +1,7 @@
 .main-banner__wrapper {
 	height: 800px;
 	margin-bottom: var(--m108);
-	background-image: url(../img/main-banner.jpg);
+	/* background-image: url(../img/main-banner.jpg); */
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -14,7 +14,22 @@
 
 .main-banner--text {
 	color: var(--white-color);
-	font-family: var(--font-heading);
+	font-family: "DM Sans", sans-serif;
+}
+
+.nameStore {
+	font-size: 50px;
+	font-family: "DM Sans", sans-serif;
+	--hue: 0;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 4px;
+	-webkit-text-stroke-color: hsl(var(--hue), 50%, 95%);
+	text-shadow:
+		0 0 15px hsl(var(--hue), 60%, 90%, .80),
+		0 0 20px hsl(var(--hue), 70%, 80%, .85),
+		0 0 40px hsl(var(--hue), 80%, 70%, .90),
+		0 0 60px hsl(var(--hue), 90%, 60%, .95),
+		0 0 80px hsl(var(--hue), 100%, 50%, 1)
 }
 
 .main-banner__title {
@@ -386,6 +401,7 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+
 	.main-banner__wrapper,
 	.brend {
 		margin-bottom: var(--m60);
