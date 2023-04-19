@@ -71,20 +71,22 @@ const About = () => {
 								Да, постоянным клиентам предоставляются скидки в 10% по карте магазина
 							</p>
 						</details>
-						<details className="question__wrapp">
-							<summary className="question__heading">Могу ли я сделать предзаказ?</summary>
-							<p className="question__content main-text">
-								Вы можете сделать предзаказ любого товара в нашем магазине
-							</p>
-						</details>
-						<details className="question__wrapp">
-							<summary className="question__heading">
-								Возможна ли рассрочка платежа за товары?
-							</summary>
-							<p className="question__content main-text">
-								В нашем магазине предусмотрена рассрочка сроком до 1 года
-							</p>
-						</details>
+					</div>
+				</section>
+
+				<section className="map">
+					<div className="container">
+						<SectionTitle text="Как нас найти" />
+						<div className="map-address">
+							<p>г. Нижний Новгород, ул. Ванеева, дом 93, 1-й этаж</p>
+						</div>
+						<div className="map__column-right">
+							<iframe
+								src="https://yandex.ru/map-widget/v1/?um=constructor%3Aafefd09ac281f5b16f65f66d0e5df6c00bb9f8971a6343e24cd40db1e86c0a55&amp;source=constructor"
+								width="100%"
+								height="550"
+							></iframe>
+						</div>
 					</div>
 				</section>
 			</div>
