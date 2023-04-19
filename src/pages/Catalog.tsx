@@ -4,7 +4,7 @@ import '../styles/Catalog.css';
 import { brends } from '../helpers/brendsList';
 
 
-const Home = () => {
+const Catalog = () => {
 
 
 	return (
@@ -54,4 +54,4 @@ const Home = () => {
 		</main>
 	);
 };
-export default Home;
+export default Catalog;

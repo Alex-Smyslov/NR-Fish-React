@@ -1,5 +1,3 @@
-/* eslint-disable comma-dangle */
-/* eslint-disable react/prop-types */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
@@ -21,7 +19,7 @@ function Slider({ slides }) {
 				shadow: true,
 				slideShadows: true,
 				shadowOffset: 80,
-				shadowScale: 1,
+				shadowScale: 1
 			}}
 		>
 			{slides.map((slide) => (
