@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-import './Slider.module.scss';
+import './Slider.css';
 
 function Slider({ slides }) {
 	return (
