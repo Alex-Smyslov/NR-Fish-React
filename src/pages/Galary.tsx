@@ -23,20 +23,6 @@ const Galary = () => {
               return <GalaryTileItem key={tile.id} img={tile.img} alt={tile.alt} />;
             })}
           </div>
-
-          <div className="slider2">
-            <div className="slider__container">
-              <button className="slider__btn slider__btn-left">
-                <i className="fas fa-chevron-left"></i>
-              </button>
-              <button className="slider__btn slider__btn-right">
-                <i className="fas fa-chevron-right"></i>
-              </button>
-            </div>
-            <button className="slider__close">
-              <i className="far fa-times-circle"></i>
-            </button>
-          </div>
         </section>
       </div>
     </main>
