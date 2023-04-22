@@ -9,11 +9,6 @@ const Galary = () => {
   return (
     <main className="galary section">
       <div className="container">
-        {/* <SectionTitle text="Галерея" />
-        <section className="galary__main">
-          <div className="galary__main-container container"></div>
-        </section> */}
-
         <section className="galary__examples">
           <div className="galary__examples-container container">
             <SectionTitle text="Фотогалерея магазина" />

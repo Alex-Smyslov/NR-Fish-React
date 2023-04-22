@@ -1,17 +1,7 @@
-.galary__main,
 .galary__examples,
 .galary__section {
 	margin-bottom: var(--m108);
-}
-
-.galary__main {
-	height: 700px;
-	padding-top: 36px;
-	padding-bottom: 100px;
-	/* background-image: url("../images/galary_banner.jpg"); */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	margin-top: var(--m96);
 }
 
 .galary__examples-slider {
@@ -257,7 +247,8 @@
 	}
 }
 
-@media screen and (max-width: 630px) {}
+@media screen and (max-width: 630px) {
+}
 
 @media screen and (max-width: 480px) {
 	.galary__title {
