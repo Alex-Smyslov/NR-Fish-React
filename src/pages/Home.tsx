@@ -1,16 +1,18 @@
 import { type MutableRefObject, useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import SectionTitle from '../components/sectionTitle/SectionTitle';
-import '../styles/Home.css';
+import MainBanner from '../components/mainBanner/MainBanner';
+import BtnMain from '../components/btnMain/BtnMain';
+import styles from '../styles/Home.module.css';
 
 const Home = () => {
   const nameStore = useRef() as MutableRefObject<HTMLHeadingElement>;
   useEffect(() => {
     const colors = gsap.to(nameStore.current, {
-      paused: true,
-      duration: 20,
-      repeat: -1,
-      '--hue': 360
+      'paused': false,
+      'duration': 10,
+      'repeat': -1,
+      '--hue': 220,
     });
 
     const doRandom = () => {
@@ -23,14 +25,14 @@ const Home = () => {
           },
           delay: function () {
             return gsap.utils.random(0.1, 2);
-          }
+          },
         })
         .to(nameStore, {
           duration: 0.1,
           opacity: 1,
           onComplete: function () {
             doRandom();
-          }
+          },
         });
     };
 
@@ -44,16 +46,18 @@ const Home = () => {
   });
 
   return (
-    <main className="section">
-      <div className="main-banner">
-        <div className="main-banner__wrapper">
-          <div className="container main-banner--text">
-            <h1 className="mainStore" ref={nameStore}>
-              NR-Fishing52
-            </h1>
-            <SectionTitle text="Продажа техники, товаров и аксессуаров для рыбалки и отдыха" />
-            <h3 className="main-banner__place">в г. Нижний Новгород</h3>
-            <p className="main-banner__slogan">Ни хвоста, ни чешуи!</p>
+    <main className={styles.section}>
+      <div className={styles.mainBanner}>
+        <div className="container">
+          <SectionTitle text="Товары и аксессуары для рыбалки и отдыха" />
+          <div className={styles.mainBanner__wrapper}>
+            <div className={[styles.mainBanner__text].join(' ')}>
+              <h1 className={styles.mainStore} ref={nameStore}>
+                NR-Fishing52
+              </h1>
+              <MainBanner />
+            </div>
+            <BtnMain text="Learn More" />
           </div>
         </div>
       </div>

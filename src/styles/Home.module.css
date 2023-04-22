@@ -1,0 +1,59 @@
+.mainBanner {
+	padding-top: var(--m108);
+}
+
+.mainBanner__wrapper {
+	position: relative;
+}
+.mainBanner__wrapper button {
+	position: absolute;
+	bottom: 5%;
+	left: 44%;
+}
+
+.mainBanner__text {
+	color: var(--white-color);
+	font-family: "DM Sans", sans-serif;
+}
+
+.mainStore {
+	position: absolute;
+	left: 20px;
+	bottom: 30px;
+	font-size: 50px;
+	font-family: "DM Sans", sans-serif;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	--hue: 0;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 4px;
+	-webkit-text-stroke-color: hsl(var(--hue), 50%, 95%);
+	text-shadow: 0 0 15px hsl(var(--hue), 60%, 90%, 0.8), 0 0 20px hsl(var(--hue), 70%, 80%, 0.85),
+		0 0 40px hsl(var(--hue), 80%, 70%, 0.9), 0 0 60px hsl(var(--hue), 90%, 60%, 0.95),
+		0 0 80px hsl(var(--hue), 100%, 50%, 1);
+}
+
+.mainBanner__title {
+	font-size: var(--font-size-42);
+	font-weight: var(--font-weight-700);
+	padding-top: calc(2 * var(--m108));
+	line-height: 130%;
+	margin: 0;
+}
+
+/* Media */
+
+@media screen and (max-width: 1290px) {
+}
+
+@media screen and (max-width: 1190px) {
+}
+
+@media screen and (max-width: 890px) {
+}
+
+@media screen and (max-width: 690px) {
+}
+
+@media screen and (max-width: 490px) {
+}
