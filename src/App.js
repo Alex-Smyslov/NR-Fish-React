@@ -10,22 +10,22 @@ import ScrollToTop from './utils/scrollToTop';
 import Header from './components/header/Header';
 
 function App() {
-	return (
-		<div className="App">
-			<Router>
-				<ScrollToTop />
-				<Header />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/catalog" element={<Catalog />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/galary" element={<Galary />} />
-					<Route path="/not-found" element={<NotFound />} />
-				</Routes>
-				<Footer />
-			</Router>
-		</div>
-	);
+  return (
+    <div className="App">
+      <Router>
+        <ScrollToTop />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/galary" element={<Galary />} />
+          <Route path="/not-found" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
 export default App;
