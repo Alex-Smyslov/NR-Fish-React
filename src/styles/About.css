@@ -54,21 +54,6 @@
 	transition: transform 0.5s;
 }
 
-.question__wrapp[open]>.question__heading:before {
+.question__wrapp[open] > .question__heading:before {
 	transform: scale(1, -1);
-}
-
-/* properties */
-.properties {
-	padding-top: 54px;
-	padding-bottom: 54px;
-	margin-bottom: 54px;
-}
-
-.properties__card {
-	width: 240px;
-}
-
-.card {
-	text-align: center;
 }

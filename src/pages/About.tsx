@@ -1,6 +1,7 @@
-import '../styles/About.css';
-
 import SectionTitle from '../components/sectionTitle/SectionTitle';
+import AdvantagesItem from '../components/advantagesItem/AdvantagesItem';
+import { advantages } from '../helpers/advantages';
+import '../styles/About.css';
 
 const About = () => {
   return (
@@ -14,24 +15,11 @@ const About = () => {
           <div className="container">
             <SectionTitle text="Преимущества работы с нами" />
             <div className="properties__card_wrapp flex">
-              <div className="properties__card card">
-                <img className="card__image" src="assets/images/quality.png" alt="" />
-                <h4 className="card__title">Опыт работы с 2012 года</h4>
-              </div>
-              <div className="properties__card card">
-                <img className="card__image" src="assets/images/price.png" alt="" />
-                <h4 className="card__title">
-                  Цены нa 5-10% ниже, чeм у посpeдникoв. Товары можно приобрести в рассрочку
-                </h4>
-              </div>
-              <div className="properties__card card">
-                <img className="card__image" src="assets/images/toolchain.png" alt="" />
-                <h4 className="card__title">Качественные товары с гарантией производителя</h4>
-              </div>
-              <div className="properties__card card">
-                <img className="card__image" src="assets/images/order.png" alt="" />
-                <h4 className="card__title">Принимаем предзаказы на любые товары</h4>
-              </div>
+              {advantages.map((item) => {
+                return (
+                  <AdvantagesItem key={item.id} img={item.img} alt={item.alt} text={item.text} />
+                );
+              })}
             </div>
           </div>
         </section>
