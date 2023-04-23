@@ -9,10 +9,10 @@ const Home = () => {
   const nameStore = useRef() as MutableRefObject<HTMLHeadingElement>;
   useEffect(() => {
     const colors = gsap.to(nameStore.current, {
-      'paused': false,
-      'duration': 10,
-      'repeat': -1,
-      '--hue': 220,
+      paused: false,
+      duration: 10,
+      repeat: -1,
+      '--hue': 220
     });
 
     const doRandom = () => {
@@ -25,14 +25,14 @@ const Home = () => {
           },
           delay: function () {
             return gsap.utils.random(0.1, 2);
-          },
+          }
         })
         .to(nameStore, {
           duration: 0.1,
           opacity: 1,
           onComplete: function () {
             doRandom();
-          },
+          }
         });
     };
 
