@@ -57,3 +57,9 @@
 .question__wrapp[open] > .question__heading:before {
 	transform: scale(1, -1);
 }
+
+.properties {
+	padding-top: 54px;
+	padding-bottom: 54px;
+	margin-bottom: 54px;
+}
