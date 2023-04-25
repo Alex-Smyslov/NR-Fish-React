@@ -78,6 +78,11 @@
  		z-index: -1;
  	}
 
+ 	.postList {
+ 		display: grid;
+ 		gap: 20px;
+ 	}
+
  	@media screen and (max-width: 890px) {}
 
  	@media screen and (max-width: 768px) {
