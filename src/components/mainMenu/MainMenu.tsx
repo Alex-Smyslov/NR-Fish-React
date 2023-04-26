@@ -52,7 +52,7 @@ const MainMenu = ({ changeVisibleNavMenu }: TProps) => {
 					</li>
 					<li className="nav-list__item">
 						<NavLink
-							to="/posts"
+							to="/api/products"
 							onClick={changeVisibleNavMenu}
 							className={({ isActive }) => (isActive ? activeLink : normalLink)}
 						>

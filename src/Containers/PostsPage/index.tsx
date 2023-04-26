@@ -2,31 +2,31 @@ import React, { useEffect } from 'react';
 import { PostCard } from '../../components/Posts/PostCard';
 import styles from './PostsPage.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPostList } from '../../store/posts/effects';
+import { getProductsList } from '../../store/app/effects';
 import {
-	getPostListIsError,
-	getPostListIsLoading,
-	getPostListIsSuccess,
-	getPostListSelector,
-} from '../../store/posts/selectors';
+	getProductsListIsError,
+	getProductsListIsLoading,
+	getProductsListIsSuccess,
+	getProductsListSelector,
+} from '../../store/app/selectors';
 
 export const PostsPage = () => {
 	const dispatch = useDispatch();
 
-	const posts = useSelector(getPostListSelector);
-	const isSuccess = useSelector(getPostListIsSuccess);
-	const isError = useSelector(getPostListIsError);
-	const isLoading = useSelector(getPostListIsLoading);
+	const products = useSelector(getProductsListSelector);
+	const isSuccess = useSelector(getProductsListIsSuccess);
+	const isError = useSelector(getProductsListIsError);
+	const isLoading = useSelector(getProductsListIsLoading);
 
 	useEffect(() => {
-		dispatch(getPostList());
+		dispatch(getProductsList());
 	}, []);
 
 	return (
 		<div className={styles.postList}>
 			{isSuccess &&
-				posts.length > 0 &&
-				posts.map(({ title, id, body }) => <PostCard key={id} title={title} body={body} id={id} />)}
+				products.length > 0 &&
+				products.map(({ title, id, description }) => <PostCard key={id} title={title} body={description} id={id} />)}
 			{isLoading && <span>Loading...</span>}
 			{isError && <span>Error</span>}
 		</div>

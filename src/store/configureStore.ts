@@ -1,9 +1,9 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { moduleApi } from './query';
-import { postsDataNameReducer, postsDataReducer } from './posts';
+import { appDataNameReducer, appDataReducer } from './app';
 
 const rootReducer = combineReducers({
-	[postsDataNameReducer]: postsDataReducer,
+	[appDataNameReducer]: appDataReducer,
 	[moduleApi.reducerPath]: moduleApi.reducer,
 });
 

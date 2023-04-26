@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getPostById } from '../../store/posts/effects';
+import { getImagesList } from '../../store/app/effects';
 
 export const PostPage = () => {
 	const params = useParams();
@@ -9,7 +9,7 @@ export const PostPage = () => {
 	const dispatch = useDispatch();
 
 	const goBack = () => {
-		navigate('/posts/5657');
+		navigate('/posts');
 	};
 
 	const goForward = () => {
@@ -18,7 +18,7 @@ export const PostPage = () => {
 
 	useEffect(() => {
 		if (params.id) {
-			dispatch(getPostById(params.id));
+			dispatch(getImagesList(params.id));
 		}
 	}, []);
 

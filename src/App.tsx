@@ -1,4 +1,3 @@
-import './styles/main.css';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/footer/Footer';
 import Home from './Containers/Home';
@@ -11,6 +10,7 @@ import Header from './components/header/Header';
 import { routes } from './utils/constants/routes';
 import { PostsPage } from './Containers/PostsPage';
 import { PostPage } from './Containers/PostPage';
+import './styles/main.css';
 
 function App() {
 	return (
@@ -23,7 +23,7 @@ function App() {
 				<Route path={routes.ABOUT} element={<About />} />
 				<Route path={routes.GALARY} element={<Galary />} />
 				<Route path={routes.NOTFOUND} element={<NotFound />} />
-				<Route path={routes.POSTS}>
+				<Route path={routes.PRODUCTS}>
 					<Route element={<PostsPage />} index />
 					<Route path=":id" element={<PostPage />} />
 				</Route>
