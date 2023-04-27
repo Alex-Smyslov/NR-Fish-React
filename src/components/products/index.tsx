@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { PostCard } from '../../components/Posts/PostCard';
+import { ProductCard } from '../productCard';
 import styles from './PostsPage.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProductsList } from '../../store/app/effects';
@@ -10,7 +10,7 @@ import {
 	getProductsListSelector,
 } from '../../store/app/selectors';
 
-export const PostsPage = () => {
+export const Products = () => {
 	const dispatch = useDispatch();
 
 	const products = useSelector(getProductsListSelector);
@@ -26,7 +26,12 @@ export const PostsPage = () => {
 		<div className={styles.postList}>
 			{isSuccess &&
 				products.length > 0 &&
-				products.map(({ title, id, description }) => <PostCard key={id} title={title} body={description} id={id} />)}
+				products.map(({ title, id, description }) =>
+					<ProductCard
+						key={id}
+						title={title}
+						body={description}
+						id={id} />)}
 			{isLoading && <span>Loading...</span>}
 			{isError && <span>Error</span>}
 		</div>

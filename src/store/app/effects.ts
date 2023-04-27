@@ -1,9 +1,9 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import { networkInstance } from '../../utils/network';
 
-export const getProductsList = createAsyncThunk('/api/products', async (_, { rejectWithValue }) => {
+export const getProductsList = createAsyncThunk('catalog', async (_, { rejectWithValue }) => {
 	try {
-		const response = await networkInstance.get('api/products');
+		const response = await networkInstance.get('catalog');
 		return response.data;
 	} catch (e) {
 		return rejectWithValue(e);

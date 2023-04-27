@@ -6,6 +6,7 @@ import SliderBanner from '../components/sliderBanner/SliderBanner';
 import slides from '../components/sliderBanner/mock.json';
 
 import '../styles/Catalog.css';
+import { Products } from '../components/products';
 
 const Catalog = () => {
 	return (
@@ -27,6 +28,7 @@ const Catalog = () => {
 			<section className="catalog">
 				<div className="container">
 					<SectionTitle text="Каталог" />
+					<Products />
 				</div>
 			</section>
 		</main>

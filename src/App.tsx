@@ -8,8 +8,8 @@ import NotFound from './Containers/NotFound';
 import ScrollToTop from './utils/scrollToTop';
 import Header from './components/header/Header';
 import { routes } from './utils/constants/routes';
-import { PostsPage } from './Containers/PostsPage';
-import { PostPage } from './Containers/PostPage';
+import { Products } from './components/products';
+import { ProductPage } from './Containers/ProductPage';
 import './styles/main.css';
 
 function App() {
@@ -19,14 +19,13 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path={routes.HOME} element={<Home />} />
-				<Route path={routes.CATALOG} element={<Catalog />} />
+				<Route path={routes.CATALOG} element={<Catalog />} >
+					<Route element={<Products />} />
+					<Route path=":id" element={<ProductPage />} index />
+				</Route>
 				<Route path={routes.ABOUT} element={<About />} />
 				<Route path={routes.GALARY} element={<Galary />} />
 				<Route path={routes.NOTFOUND} element={<NotFound />} />
-				<Route path={routes.PRODUCTS}>
-					<Route element={<PostsPage />} index />
-					<Route path=":id" element={<PostPage />} />
-				</Route>
 			</Routes>
 			<Footer />
 		</div>

@@ -50,15 +50,6 @@ const MainMenu = ({ changeVisibleNavMenu }: TProps) => {
 							Галерея
 						</NavLink>
 					</li>
-					<li className="nav-list__item">
-						<NavLink
-							to="/api/products"
-							onClick={changeVisibleNavMenu}
-							className={({ isActive }) => (isActive ? activeLink : normalLink)}
-						>
-							API
-						</NavLink>
-					</li>
 				</ul>
 			</nav>
 		</>
