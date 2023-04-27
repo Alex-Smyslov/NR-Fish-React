@@ -28,7 +28,7 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"server": "cd ./server && node index.js",
-		"start all": "concurrently \"react-scripts start\" \"cd server && node server.js",
+		"startall": "concurrently \"react-scripts start\" \"cd server && node server.js",
 		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {

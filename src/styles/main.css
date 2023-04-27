@@ -96,8 +96,12 @@ body {
 	margin: auto;
 }
 
-.section {
+section:first-child {
 	padding-top: 80px;
+}
+
+section {
+	padding-bottom: 50px;
 }
 
 .flex {

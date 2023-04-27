@@ -20,8 +20,7 @@ function App() {
 			<Routes>
 				<Route path={routes.HOME} element={<Home />} />
 				<Route path={routes.CATALOG} element={<Catalog />} >
-					<Route element={<Products />} />
-					<Route path=":id" element={<ProductPage />} index />
+					<Route path=":id" element={<ProductPage />} />
 				</Route>
 				<Route path={routes.ABOUT} element={<About />} />
 				<Route path={routes.GALARY} element={<Galary />} />
