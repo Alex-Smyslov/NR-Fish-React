@@ -34,7 +34,6 @@
 		"@typescript-eslint/space-before-function-paren": "off",
 		"react/jsx-uses-react": "off",
 		"react/react-in-jsx-scope": "off",
-		"@typescript-eslint/member-delimiter-style": "off",
-		"endOfLine": "auto"
+		"@typescript-eslint/member-delimiter-style": "off"
 	}
 }
