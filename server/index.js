@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // import express from 'express';
 // import cors from 'cors';
 // import products from './static/products.json';
@@ -22,12 +23,4 @@ app.listen(PORT, () => {
 
 app.get('/catalog', async (req, res) => {
   await res.json(products);
-});
-
-app.get('/api/images', async (req, res) => {
-  await res.json({
-    id: '1',
-    title: 'Product 1',
-    description: 'Product 1Product 1Product 1Product 1',
-  });
 });

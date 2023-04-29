@@ -18,7 +18,7 @@ export const ProductPage = () => {
 
   useEffect(() => {
     if (params.id) {
-      dispatch(getImagesList(params.id));
+      // dispatch(getImagesList(params.id));
     }
   }, []);
 

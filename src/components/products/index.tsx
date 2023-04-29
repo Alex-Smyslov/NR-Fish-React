@@ -23,11 +23,18 @@ export const Products = () => {
   }, []);
 
   return (
-    <div className={styles.postList}>
+    <div className={styles.productList}>
       {isSuccess &&
         products.length > 0 &&
-        products.map(({ title, id, description }) => (
-          <ProductCard key={id} title={title} body={description} id={id} />
+        products.map(({ id, img, title, description, price }) => (
+          <ProductCard
+            key={id}
+            id={id}
+            img={img}
+            title={title}
+            description={description}
+            price={price}
+          />
         ))}
       {isLoading && <span>Loading...</span>}
       {isError && <span>Error</span>}
