@@ -24,11 +24,11 @@
 		"swiper": "^9.2.2"
 	},
 	"scripts": {
-		"start": "react-scripts start",
+		"start": "concurrently --kill-others \"npm run server\" \"npm run start\"",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"server": "cd ./server && node index.js",
-		"startall": "concurrently \"react-scripts start\" \"cd server && node server.js",
+		"startfront": "react-scripts start",
 		"eject": "react-scripts eject"
 	},
 	"eslintConfig": {
