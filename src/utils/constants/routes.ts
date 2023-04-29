@@ -1,7 +1,7 @@
 export const routes = {
-	HOME: '/',
-	CATALOG: '/catalog',
-	ABOUT: '/about',
-	GALARY: '/galary',
-	NOTFOUND: '/not-found',
+  HOME: '/',
+  CATALOG: '/catalog',
+  ABOUT: '/about',
+  GALARY: '/galary',
+  NOTFOUND: '/not-found',
 };

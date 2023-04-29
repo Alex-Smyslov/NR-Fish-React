@@ -20,7 +20,7 @@ export const useWindowWidth = () => {
 export const useMediaQuery = (maxWidth) => {
   const {
     windowWidth: { windowWidth },
-    handleResize
+    handleResize,
   } = useWindowWidth();
   const [isMedia, setIsMedia] = useState(false);
 
