@@ -1,9 +1,12 @@
-// require('dotenv').config();
-const express = require('express');
+import express from 'express';
+import cors from 'cors';
+import products from './static/products.json';
 const app = express();
-const PORT = process.env.PORT || 3001;
-const cors = require('cors');
-const products = require('./static/products.json');
+const PORT = 3001;
+// const express = require('express');
+// require('dotenv').config();
+// const cors = require('cors');
+// const products = require('./static/products.json');
 
 app.use(
   cors({
