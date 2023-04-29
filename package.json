@@ -32,7 +32,6 @@
     "test": "react-scripts test",
     "server": "cd ./server && node index.js",
     "startfront": "react-scripts start",
-    "install": "concurrently --kill-others \"cd ./server && node index.js\" \"react-scripts install\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
