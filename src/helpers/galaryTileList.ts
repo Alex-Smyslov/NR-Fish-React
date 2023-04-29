@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import picture1 from '../img/galaryTile/1.jpg';
 import picture2 from '../img/galaryTile/2.jpg';
 import picture3 from '../img/galaryTile/3.jpg';

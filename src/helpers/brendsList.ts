@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import flagman from '../img/brend/flagman.svg';
 import carpPro from '../img/brend/carp-pro.svg';
 import dunaev from '../img/brend/dunaev.svg';

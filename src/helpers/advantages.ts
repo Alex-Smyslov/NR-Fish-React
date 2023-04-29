@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import quality from '../img/icons/advantages/quality.png';
 import toolchain from '../img/icons/advantages/toolchain.png';
 import price from '../img/icons/advantages/price.png';
