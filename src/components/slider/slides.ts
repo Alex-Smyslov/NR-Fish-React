@@ -1,8 +1,8 @@
-import slide1 from 'https://raw.githubusercontent.com/Alex-Smyslov/NR-Fish-React/main/public/slider/image-1.webp';
-import slide2 from 'https://raw.githubusercontent.com/Alex-Smyslov/NR-Fish-React/main/public/slider/image-2.webp';
-import slide3 from 'https://raw.githubusercontent.com/Alex-Smyslov/NR-Fish-React/main/public/slider/image-3.webp';
-import slide4 from 'https://raw.githubusercontent.com/Alex-Smyslov/NR-Fish-React/main/public/slider/image-4.webp';
-import slide5 from 'https://raw.githubusercontent.com/Alex-Smyslov/NR-Fish-React/main/public/slider/image-5.webp';
+import slide1 from './slider/image-1.webp';
+import slide2 from './slider/image-2.webp';
+import slide3 from './slider/image-3.webp';
+import slide4 from './slider/image-4.webp';
+import slide5 from './slider/image-5.webp';
 
 const slides = [
   {
