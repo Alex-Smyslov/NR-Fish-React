@@ -16,8 +16,8 @@ function SliderBanner({ slides }) {
       scrollbar={{ draggable: true }}
     >
       {slides.map((slide) => (
-        <SwiperSlide key={slide.image}>
-          <img src={slide.image} alt={slide.title} />
+        <SwiperSlide key={slide.id}>
+          <img src={slide.img} alt={slide.alt} />
         </SwiperSlide>
       ))}
     </Swiper>

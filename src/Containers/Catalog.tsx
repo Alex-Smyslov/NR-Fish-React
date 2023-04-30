@@ -3,7 +3,7 @@ import SectionTitle from '../components/sectionTitle/SectionTitle';
 import BrendItem from '../components/brendItem/BrendItem';
 import { brends } from '../helpers/brendsList';
 import SliderBanner from '../components/sliderBanner/SliderBanner';
-import slides from '../components/sliderBanner/mock.json';
+import { slides } from '../components/sliderBanner/slides';
 
 import '../styles/Catalog.css';
 import { Products } from '../components/products';
