@@ -1,14 +1,9 @@
-/* eslint-disable no-undef */
-// import express from 'express';
-// import cors from 'cors';
-// import products from './static/products.json';
-
-const express = require('express');
 require('dotenv').config();
+const express = require('express');
 const cors = require('cors');
 const products = require('./static/products.json');
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(
   cors({
@@ -22,5 +17,5 @@ app.listen(PORT, () => {
 });
 
 app.get('/catalog', async (req, res) => {
-  await res.json(products);
+  res.json(products);
 });
