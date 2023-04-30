@@ -3,7 +3,7 @@ import GalaryTileItem from '../components/galaryTileItem/GalaryTileItem';
 import { galaryTile } from '../helpers/galaryTileList';
 import '../styles/Galary.css';
 import Slider from '../components/slider/Slider';
-import slides from '../components/slider/mock.json';
+import { slides } from '../components/slider/slides';
 
 const Galary = () => {
   return (
