@@ -1,22 +1,22 @@
 [
-	{
-		"image": "http://localhost:3000/slider/image-1.webp",
-		"title": "Slide #1"
-	},
-	{
-		"image": "http://localhost:3000/slider/image-2.webp",
-		"title": "Slide #2"
-	},
-	{
-		"image": "http://localhost:3000/slider/image-3.webp",
-		"title": "Slide #3"
-	},
-	{
-		"image": "http://localhost:3000/slider/image-4.webp",
-		"title": "Slide #4"
-	},
-	{
-		"image": "http://localhost:3000/slider/image-5.webp",
-		"title": "Slide #5"
-	}
+  {
+    "image": "https://github.com/Alex-Smyslov/NR-Fish-React/blob/main/public/slider/image-1.webp",
+    "title": "Slide #1"
+  },
+  {
+    "image": "https://github.com/Alex-Smyslov/NR-Fish-React/blob/main/public/slider/image-2.webp",
+    "title": "Slide #2"
+  },
+  {
+    "image": "https://github.com/Alex-Smyslov/NR-Fish-React/blob/main/public/slider/image-3.webp",
+    "title": "Slide #3"
+  },
+  {
+    "image": "https://github.com/Alex-Smyslov/NR-Fish-React/blob/main/public/slider/image-4.webp",
+    "title": "Slide #4"
+  },
+  {
+    "image": "https://github.com/Alex-Smyslov/NR-Fish-React/blob/main/public/slider/image-5.webp",
+    "title": "Slide #5"
+  }
 ]
