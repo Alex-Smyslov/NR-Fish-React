@@ -29,8 +29,8 @@ const Catalog = () => {
 					</div>
 				</section>
 
-				<section className={styles.catalog}>
-					<div className={styles.container}>
+				<section className={styles.catalog__list}>
+					<div className={styles.catalog__listContainer}>
 						<SectionTitle text="Каталог" />
 						<Products />
 					</div>

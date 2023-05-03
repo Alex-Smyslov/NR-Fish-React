@@ -89,6 +89,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	margin: 0 auto;
 }
 
@@ -98,9 +99,9 @@ body {
 	padding: 0 15px;
 }
 
-section:first-child {
+/* section:first-child {
 	padding-top: 80px;
-}
+} */
 
 section {
 	max-width: 100%;

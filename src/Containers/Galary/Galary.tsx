@@ -9,9 +9,9 @@ const Galary = () => {
 	return (
 		<main className={styles.galary}>
 			<div className={styles.galary__container}>
-				<section className={styles.galary__examples}>
-					<div className={styles.galary__examplesContainer}>
-						<SectionTitle text="Фотогалерея магазина" />
+				<section className={styles.galary__slider}>
+					<SectionTitle text="Фотогалерея магазина" />
+					<div className={styles.galary__sliderWrapp}>
 						<Slider slides={slides} />
 					</div>
 				</section>

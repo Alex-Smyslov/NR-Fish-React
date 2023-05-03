@@ -5,20 +5,17 @@
 		max-width: 90vw;
 	}
 
-	&__examples,
+	&__slider,
 	&__photo {
-		margin-top: 76px;
-		margin-bottom: var(--m108);
+		margin-top: var(--m108);
 	}
 
 	&__plit {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		gap: 8px;
 	}
-
-
 }
 
 
@@ -28,6 +25,8 @@
 /* Adaptive */
 
 @media screen and (max-width: 1480px) {
+
+
 	// .galary__container {
 	// 	max-width: 100%;
 	// }

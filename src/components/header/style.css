@@ -119,7 +119,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
-		font-size: var(--m36);
+		font-size: var(--m24);
+		margin-top: 30px;
 	}
 
 	.hamburger {
