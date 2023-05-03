@@ -58,18 +58,18 @@
 @media screen and (max-width: 890px) {}
 
 @media screen and (max-width: 690px) {
-	.mainStore {
+	.main__store {
 		display: none;
 	}
 
-	.mainBanner__wrapper button {
+	.main__wrapper button {
 		bottom: 5%;
 		left: 0;
 	}
 }
 
 @media screen and (max-width: 490px) {
-	.mainBanner__wrapper button {
+	.main__wrapper button {
 		padding: 10px 15px;
 		font-weight: var(--font-weight-400);
 		font-size: var(--font-size-12);
