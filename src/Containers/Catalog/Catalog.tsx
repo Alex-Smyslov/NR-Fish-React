@@ -10,27 +10,33 @@ import { Products } from '../../components/products';
 
 const Catalog = () => {
 	return (
-		<main className={styles.section}>
-			<section className={styles.banner}>
-				<SliderBanner slides={slides} />
-			</section>
-			<section className={styles.brend}>
-				<div className={styles.container}>
-					<SectionTitle text="Популярные бренды" />
-					<div className={styles.brendGrid}>
-						{brends.map((brend) => {
-							return <BrendItem key={brend.id} img={brend.img} alt={brend.alt} />;
-						})}
-					</div>
-				</div>
-			</section>
+		<main className={styles.catalog}>
+			<div className={styles.catalog__banner}>
+				<section className={styles.catalog__slider}>
+					<SliderBanner slides={slides} />
+				</section>
+			</div>
 
-			<section className={styles.catalog}>
-				<div className={styles.container}>
-					<SectionTitle text="Каталог" />
-					<Products />
-				</div>
-			</section>
+			<div className={styles.catalog__container}>
+				<section className={styles.brend}>
+					<div className={styles.brend__wrapp}>
+						<SectionTitle text="Популярные бренды" />
+						<div className={styles.brendGrid}>
+							{brends.map((brend) => {
+								return <BrendItem key={brend.id} img={brend.img} alt={brend.alt} />;
+							})}
+						</div>
+					</div>
+				</section>
+
+				<section className={styles.catalog}>
+					<div className={styles.container}>
+						<SectionTitle text="Каталог" />
+						<Products />
+					</div>
+				</section>
+			</div>
+
 		</main>
 	);
 };

@@ -5,16 +5,16 @@ import styles from './About.module.scss';
 
 const About = () => {
 	return (
-		<main className={styles.section}>
-			<div className={styles.container}>
-				<section className={[styles.about, styles.section].join(' ')}>
+		<main className={styles.about}>
+			<div className={styles.about__container}>
+				<section className={styles.about__store}>
 					<SectionTitle text="О нас" />
 				</section>
 
-				<section className={[styles.section, styles.properties].join(' ')}>
-					<div className={styles.container}>
+				<section className={styles.properties}>
+					<div className={styles.properties__wrapp}>
 						<SectionTitle text="Преимущества работы с нами" />
-						<div className={styles.properties__card_wrapp}>
+						<div className={styles.properties__card}>
 							{profit.map((item) => {
 								return (
 									<ProfitItem key={item.id} img={item.img} alt={item.alt} text={item.text} />

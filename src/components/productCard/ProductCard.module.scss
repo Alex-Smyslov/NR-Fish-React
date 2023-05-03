@@ -11,14 +11,32 @@
 		color: var(--text-color);
 	}
 
-	img {
-		width: 100%;
-		max-height: auto;
+	&__img {
+		position: relative;
+		height: 300px;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
-	&__label {
-		flex: 1 1 auto;
-		font-size: var(--m24);
+	&__link {
+		position: relative;
+		height: 80px;
+		overflow: hidden;
+
+		span {
+			font-size: var(--m24);
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
 	}
 
 	&__description {
@@ -31,8 +49,26 @@
 
 		span {
 			font-size: var(--m36);
+			font-weight: var(--font-weight-500);
 		}
 	}
 
 
+}
+
+
+
+.gallery__card {
+	position: relative;
+	height: 300px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.gallery__card-pic {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.2s;
 }

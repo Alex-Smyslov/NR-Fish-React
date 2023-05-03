@@ -1,12 +1,12 @@
-import './BrendItem.css';
 import '../../helpers/brendsList.ts';
+import styles from './BrendItem.module.scss';
 
 const BrendItem = ({ img, alt }: { img: string; alt: string }) => {
-  return (
-    <div className="brend-grid__item">
-      <img className="brend__pic" src={img} alt={alt} />
-    </div>
-  );
+	return (
+		<div className={styles.brend__item}>
+			<img src={img} alt={alt} />
+		</div>
+	);
 };
 
 export default BrendItem;

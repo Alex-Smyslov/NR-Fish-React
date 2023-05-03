@@ -1,6 +1,6 @@
 import styles from './ProfitItem.module.scss';
 
-const AdvantagesItem = ({ img, alt, text }: { img: string; alt: string; text: string }) => {
+const ProfitItem = ({ img, alt, text }: { img: string; alt: string; text: string }) => {
 	return (
 		<div className={styles.profit}>
 			<img className={styles.profit__image} src={img} alt={alt} />
@@ -9,4 +9,4 @@ const AdvantagesItem = ({ img, alt, text }: { img: string; alt: string; text: st
 	);
 };
 
-export default AdvantagesItem;
+export default ProfitItem;

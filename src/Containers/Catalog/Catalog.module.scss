@@ -1,6 +1,18 @@
- 	.banner {
- 		width: 100%;
+ 	.catalog {
+
+ 		&__banner {
+ 			max-width: 99vw;
+ 			margin: 0 -5px;
+ 		}
+
+ 		&__container {
+ 			width: 90vw;
+ 			margin: 0 auto;
+ 			margin-top: 80px;
+ 		}
  	}
+
+
 
  	/*  brend  */
 
@@ -33,7 +45,7 @@
  	@media screen and (max-width: 890px) {}
 
  	@media screen and (max-width: 768px) {
- 		.brend-grid__item {
+ 		.brendGrid__item {
  			width: 100%;
  		}
 
@@ -47,11 +59,11 @@
  	}
 
  	@media screen and (max-width: 515px) {
- 		.brend-grid {
+ 		.brendGrid {
  			grid-template-columns: repeat(1, 1fr);
  		}
 
- 		.brend-grid__item {
+ 		.brendGrid__item {
  			width: 100%;
  		}
 

@@ -1,0 +1,14 @@
+.brend__item {
+	position: relative;
+	transition: 0.3s ease;
+
+	&:hover {
+		transform: scale(1.05);
+		cursor: default;
+	}
+
+	img {
+		display: block;
+		width: 250px;
+	}
+}

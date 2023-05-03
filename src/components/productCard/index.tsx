@@ -15,7 +15,7 @@ export const ProductCard = ({ id, img, title, description, price }: IProps) => {
 	return (
 		<>
 			<div className={styles.card}>
-				<img src={img} alt={title} />
+				<img className={styles.card__img} src={img} alt={title} />
 				<NavLink className={styles.card__link} to={`${routes.CATALOG}/${id}`}>
 					<span className={styles.card__label}>{title}</span>
 				</NavLink>

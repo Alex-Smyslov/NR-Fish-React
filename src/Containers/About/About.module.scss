@@ -1,4 +1,14 @@
-.properties__card_wrapp {
+.about {
+	margin: 0 auto;
+
+	&__container {
+		max-width: 90vw;
+	}
+}
+
+
+
+.properties__card {
 	display: flex;
 	align-items: stretch;
 	gap: 30px;

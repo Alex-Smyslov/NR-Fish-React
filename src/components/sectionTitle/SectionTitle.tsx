@@ -1,12 +1,12 @@
-import './SectionTitle.css';
+import styles from './SectionTitle.module.scss';
 
 const SectionTitle = ({ text }: { text: string }) => {
-  return (
-    <h2 className="section-title">
-      {text}
-      <span className="section-title__border"></span>
-    </h2>
-  );
+	return (
+		<h2 className={styles.sectionTitle}>
+			{text}
+			<span className={styles.sectionTitle__border}></span>
+		</h2>
+	);
 };
 
 export default SectionTitle;
