@@ -4,26 +4,26 @@ import { NavLink } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
 
 interface IProps {
-	id: number;
-	img: string;
-	title: string;
-	description: string;
-	price: number;
+  id: number;
+  img: string;
+  title: string;
+  description: string;
+  price: number;
 }
 
 export const ProductCard = ({ id, img, title, description, price }: IProps) => {
-	return (
-		<>
-			<div className={styles.card}>
-				<img className={styles.card__img} src={img} alt={title} />
-				<NavLink className={styles.card__link} to={`${routes.CATALOG}/${id}`}>
-					<span className={styles.card__label}>{title}</span>
-				</NavLink>
-				<p className={styles.card__description}>{description}</p>
-				<p className={styles.card__price}>Цена: <span>{price}</span> руб.</p>
-			</div>
-
-		</>
-
-	);
+  return (
+    <>
+      <div className={styles.card}>
+        <img className={styles.card__img} src={img} alt={title} />
+        <NavLink className={styles.card__link} to={`${routes.CATALOG}/${id}`}>
+          <span className={styles.card__label}>{title}</span>
+        </NavLink>
+        <p className={styles.card__description}>{description}</p>
+        <p className={styles.card__price}>
+          Цена: <span>{price}</span> руб.
+        </p>
+      </div>
+    </>
+  );
 };

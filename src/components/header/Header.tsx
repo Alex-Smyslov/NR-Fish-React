@@ -5,40 +5,41 @@ import Navbar from '../navbar/Navbar';
 import './style.css';
 
 const Header = () => {
-	const isMobile = useMediaQuery(800);
+  const isMobile = useMediaQuery(800);
 
-	const [isOpenMenu, setIsopenMenu] = useState(false);
+  const [isOpenMenu, setIsopenMenu] = useState(false);
 
-	const changeVisibleNavMenu = () => {
-		setIsopenMenu(!isOpenMenu);
-	};
+  const changeVisibleNavMenu = () => {
+    setIsopenMenu(!isOpenMenu);
+  };
 
-	return (
-		<header className="header">
-			<div className="container">
-				<div className="header__wrapper">
-					<Logotype />
-					{isMobile && (
-						<button
-							onClick={changeVisibleNavMenu}
-							className={`header__toggle hamburger hamburger--spin ${isOpenMenu && isMobile ? 'isActive' : ''
-								}`}
-							type="button"
-						>
-							<span className="hamburger-box">
-								<span className="hamburger-inner"> </span>
-							</span>
-						</button>
-					)}
-					<Navbar
-						isMobile={isMobile}
-						isOpenMenu={isOpenMenu}
-						changeVisibleNavMenu={changeVisibleNavMenu}
-					/>
-				</div>
-			</div>
-		</header>
-	);
+  return (
+    <header className="header">
+      <div className="container">
+        <div className="header__wrapper">
+          <Logotype />
+          {isMobile && (
+            <button
+              onClick={changeVisibleNavMenu}
+              className={`header__toggle hamburger hamburger--spin ${
+                isOpenMenu && isMobile ? 'isActive' : ''
+              }`}
+              type="button"
+            >
+              <span className="hamburger-box">
+                <span className="hamburger-inner"> </span>
+              </span>
+            </button>
+          )}
+          <Navbar
+            isMobile={isMobile}
+            isOpenMenu={isOpenMenu}
+            changeVisibleNavMenu={changeVisibleNavMenu}
+          />
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;

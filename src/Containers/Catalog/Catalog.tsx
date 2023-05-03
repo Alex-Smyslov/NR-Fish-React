@@ -9,35 +9,34 @@ import styles from './Catalog.module.scss';
 import { Products } from '../../components/products';
 
 const Catalog = () => {
-	return (
-		<main className={styles.catalog}>
-			<div className={styles.catalog__banner}>
-				<section className={styles.catalog__slider}>
-					<SliderBanner slides={slides} />
-				</section>
-			</div>
+  return (
+    <main className={styles.catalog}>
+      <div className={styles.catalog__banner}>
+        <section className={styles.catalog__slider}>
+          <SliderBanner slides={slides} />
+        </section>
+      </div>
 
-			<div className={styles.catalog__container}>
-				<section className={styles.brend}>
-					<div className={styles.brend__wrapp}>
-						<SectionTitle text="Популярные бренды" />
-						<div className={styles.brendGrid}>
-							{brends.map((brend) => {
-								return <BrendItem key={brend.id} img={brend.img} alt={brend.alt} />;
-							})}
-						</div>
-					</div>
-				</section>
+      <div className={styles.catalog__container}>
+        <section className={styles.brend}>
+          <div className={styles.brend__wrapp}>
+            <SectionTitle text="Популярные бренды" />
+            <div className={styles.brendGrid}>
+              {brends.map((brend) => {
+                return <BrendItem key={brend.id} img={brend.img} alt={brend.alt} />;
+              })}
+            </div>
+          </div>
+        </section>
 
-				<section className={styles.catalog__list}>
-					<div className={styles.catalog__listContainer}>
-						<SectionTitle text="Каталог" />
-						<Products />
-					</div>
-				</section>
-			</div>
-
-		</main>
-	);
+        <section className={styles.catalog__list}>
+          <div className={styles.catalog__listContainer}>
+            <SectionTitle text="Каталог" />
+            <Products />
+          </div>
+        </section>
+      </div>
+    </main>
+  );
 };
 export default Catalog;

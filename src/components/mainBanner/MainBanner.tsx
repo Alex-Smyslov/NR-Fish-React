@@ -1,12 +1,12 @@
 const MainBanner = () => {
   return (
     <svg
-      className="main-background"
+      className="main__background"
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
       width="100%"
       height="100%"
-      viewBox="0 0 920.000000 637.000000"
+      viewBox="0 0 930.000000 637.000000"
       preserveAspectRatio="xMidYMid meet"
     >
       <g

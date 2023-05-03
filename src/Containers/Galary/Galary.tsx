@@ -6,27 +6,27 @@ import { slides } from '../../components/slider/slides';
 import styles from './Galary.module.scss';
 
 const Galary = () => {
-	return (
-		<main className={styles.galary}>
-			<div className={styles.galary__container}>
-				<section className={styles.galary__slider}>
-					<SectionTitle text="Фотогалерея магазина" />
-					<div className={styles.galary__sliderWrapp}>
-						<Slider slides={slides} />
-					</div>
-				</section>
+  return (
+    <main className={styles.galary}>
+      <div className={styles.galary__container}>
+        <section className={styles.galary__slider}>
+          <SectionTitle text="Фотогалерея магазина" />
+          <div className={styles.galary__sliderWrapp}>
+            <Slider slides={slides} />
+          </div>
+        </section>
 
-				<section className={styles.galary__photo}>
-					<SectionTitle text="Фотографии покупателей" />
-					<div className={styles.galary__plit}>
-						{galaryTile.map((tile) => {
-							return <GalaryTileItem key={tile.id} img={tile.img} alt={tile.alt} />;
-						})}
-					</div>
-				</section>
-			</div>
-		</main>
-	);
+        <section className={styles.galary__photo}>
+          <SectionTitle text="Фотографии покупателей" />
+          <div className={styles.galary__plit}>
+            {galaryTile.map((tile) => {
+              return <GalaryTileItem key={tile.id} img={tile.img} alt={tile.alt} />;
+            })}
+          </div>
+        </section>
+      </div>
+    </main>
+  );
 };
 
 export default Galary;
