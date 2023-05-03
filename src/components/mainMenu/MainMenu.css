@@ -27,7 +27,7 @@
 	transition: all 0.45s;
 }
 
-.nav-list__item > a:hover::after {
+.nav-list__item>a:hover::after {
 	transform: scaleX(1);
 }
 

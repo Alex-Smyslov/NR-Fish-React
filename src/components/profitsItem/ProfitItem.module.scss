@@ -1,0 +1,21 @@
+.profit {
+	width: 200px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	text-align: center;
+	border: 3px solid rgb(75, 49, 177);
+	border-radius: 8px;
+	padding: 20px;
+
+	&__image {
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		flex: 1 1 auto;
+		font-size: var(--m18);
+		font-weight: var(--font-weight-300);
+		margin-bottom: 20px;
+	}
+}

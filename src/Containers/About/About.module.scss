@@ -1,3 +1,9 @@
+.properties__card_wrapp {
+	display: flex;
+	align-items: stretch;
+	gap: 30px;
+}
+
 .question {
 	margin-bottom: 78px;
 	padding-top: 27px;
@@ -54,7 +60,7 @@
 	transition: transform 0.5s;
 }
 
-.question__wrapp[open] > .question__heading:before {
+.question__wrapp[open]>.question__heading:before {
 	transform: scale(1, -1);
 }
 

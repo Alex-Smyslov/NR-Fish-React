@@ -1,23 +1,29 @@
 import React from 'react';
-import styles from './PostCard.module.scss';
-import { Link } from 'react-router-dom';
+import styles from './ProductCard.module.scss';
+import { NavLink } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
 
 interface IProps {
-  id: number;
-  img: string;
-  title: string;
-  description: string;
-  price: number;
+	id: number;
+	img: string;
+	title: string;
+	description: string;
+	price: number;
 }
 
 export const ProductCard = ({ id, img, title, description, price }: IProps) => {
-  return (
-    <Link className={styles.cardWrapper} to={`${routes.CATALOG}/${id}`}>
-      <img src={img} alt={title} />
-      <span className={styles.label}>{title}</span>
-      <p className={styles.content}>{description}</p>
-      <p className={styles.content}>{price}</p>
-    </Link>
-  );
+	return (
+		<>
+			<div className={styles.card}>
+				<img src={img} alt={title} />
+				<NavLink className={styles.card__link} to={`${routes.CATALOG}/${id}`}>
+					<span className={styles.card__label}>{title}</span>
+				</NavLink>
+				<p className={styles.card__description}>{description}</p>
+				<p className={styles.card__price}>Цена: <span>{price}</span> руб.</p>
+			</div>
+
+		</>
+
+	);
 };

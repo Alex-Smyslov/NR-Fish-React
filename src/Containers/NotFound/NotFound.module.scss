@@ -1,4 +1,4 @@
-.not-found__grid {
+.notFound__grid {
 	display: grid;
 	position: relative;
 	grid-template-rows: 1fr 2fr;
@@ -12,15 +12,15 @@
 	padding: var(--m36) var(--m12);
 }
 
-.not-found__image {
+.notFound__image {
 	grid-area: A;
 	width: 100%;
 }
 
-.not-found__bot {
+.notFound__bot {
 	grid-area: B;
 }
 
-.not-found__image img {
+.notFound__image img {
 	right: 20px;
 }

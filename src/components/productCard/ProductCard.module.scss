@@ -1,0 +1,38 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+	border: 1px solid rgb(75, 49, 177);
+	border-radius: 8px;
+
+	a {
+		text-decoration: none;
+		color: var(--text-color);
+	}
+
+	img {
+		width: 100%;
+		max-height: auto;
+	}
+
+	&__label {
+		flex: 1 1 auto;
+		font-size: var(--m24);
+	}
+
+	&__description {
+		flex: 1 1 auto;
+		font-size: var(--m12);
+	}
+
+	&__price {
+		font-size: var(--m24);
+
+		span {
+			font-size: var(--m36);
+		}
+	}
+
+
+}
