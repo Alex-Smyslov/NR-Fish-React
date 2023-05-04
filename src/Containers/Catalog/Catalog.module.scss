@@ -8,7 +8,8 @@
  		}
 
  		&__container {
- 			width: 90vw;
+ 			max-width: 1140px;
+ 			padding: 0 40px;
  			margin: 0 auto;
  		}
  	}
@@ -43,7 +44,7 @@
  		.brendGrid {
  			grid-template-columns: repeat(2, 1fr);
  			grid-template-rows: repeat(4, 1fr);
- 			gap: 48px;
+ 			gap: 20px;
 
  			img {
  				width: 300px;
