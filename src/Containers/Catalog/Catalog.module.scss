@@ -12,6 +12,13 @@
  			padding: 0 40px;
  			margin: 0 auto;
  		}
+
+ 		// &____listContainer {
+ 		// 	width: 100%;
+ 		// 	display: grid;
+ 		// 	grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+ 		// 	gap: 8px;
+ 		// }
  	}
 
 
@@ -37,6 +44,8 @@
  		padding-bottom: 24px;
  		z-index: -1;
  	}
+
+ 	// CATALOG
 
  	@media screen and (max-width: 1024px) {}
 

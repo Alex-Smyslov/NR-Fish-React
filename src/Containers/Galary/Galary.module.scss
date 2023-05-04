@@ -8,7 +8,7 @@
 	}
 
 	&__slider {
-		max-width: 1140px;
+		// max-width: 1140px;
 		// padding: 0 40px;
 	}
 
@@ -20,7 +20,7 @@
 	&__plit {
 		width: 100%;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
 		gap: 8px;
 	}
 }
