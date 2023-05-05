@@ -3,8 +3,9 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	padding: 20px;
-	border: 1px solid rgb(75, 49, 177);
+	// padding: 20px;
+	// border: 1px solid rgb(75, 49, 177);
+	box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 	border-radius: 8px;
 
 	a {
@@ -16,6 +17,7 @@
 		position: relative;
 		height: 300px;
 		overflow: hidden;
+		border-radius: 8px;
 
 		img {
 			position: absolute;
@@ -27,15 +29,16 @@
 
 	&__link {
 		position: relative;
-		height: 80px;
+		height: 60px;
 		overflow: hidden;
 
 		span {
-			font-size: var(--m24);
+			font-size: var(--m18);
 			position: absolute;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			padding: 10px
 		}
 
 	}
@@ -43,13 +46,15 @@
 	&__description {
 		flex: 1 1 auto;
 		font-size: var(--m12);
+		padding: 10px
 	}
 
 	&__price {
-		font-size: var(--m24);
+		font-size: var(--m18);
+		padding: 10px;
 
 		span {
-			font-size: var(--m36);
+			font-size: var(--m24);
 			font-weight: var(--font-weight-500);
 		}
 	}
