@@ -1,0 +1,12 @@
+.aboutStore {
+	display: flex;
+	align-items: center;
+
+	&__img {
+		min-width: 300px;
+	}
+
+	&__title {
+		margin-bottom: 30px;
+	}
+}

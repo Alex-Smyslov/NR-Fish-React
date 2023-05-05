@@ -1,6 +1,7 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
 
+
 :root {
 	/* Colors */
 	--blackpure: rgb(0, 0, 0);
@@ -8,7 +9,10 @@
 	--black-border: #26292d;
 	--white: #fff;
 	--purple: #5c62ec;
-	--lite: #a0a7b4;
+	--lite: #cacfdb;
+	/* --lite: #a0a7b4; */
+
+
 
 	/* Nav */
 	--nav-bg: var(--black);
@@ -56,6 +60,8 @@
 	--accent: var(--purple);
 	--section-title: var(--purple);
 	--box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+	--svg-question: var(--black);
+
 }
 
 .dark {
@@ -65,6 +71,7 @@
 	--text-color: var(--white);
 	--section-title: var(--white);
 	--box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.8);
+	--svg-question: var(--white);
 }
 
 html,
