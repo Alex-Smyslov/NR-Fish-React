@@ -2,7 +2,8 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
-	gap: 8px;
+	column-gap: 10px;
+	row-gap: 40px;
 	justify-items: center;
 	align-items: stretch;
 }

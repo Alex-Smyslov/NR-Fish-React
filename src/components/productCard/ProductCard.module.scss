@@ -1,5 +1,5 @@
 .card {
-	max-width: 330px;
+	width: 320px;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -49,11 +49,16 @@
 		padding: 10px
 	}
 
+	&__description_content {
+		padding-top: 15px;
+	}
+
 	&__price {
 		font-size: var(--m18);
 		padding: 10px;
 
 		span {
+			color: var(--purple);
 			font-size: var(--m24);
 			font-weight: var(--font-weight-500);
 		}
