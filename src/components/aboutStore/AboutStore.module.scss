@@ -1,12 +1,32 @@
 .aboutStore {
-	display: flex;
-	align-items: center;
+	// max-height: 400px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	// align-items: center;
 
 	&__img {
-		min-width: 300px;
+		
+		img{
+			max-height: 550px;
+			object-fit: cover;
+		}
+	}
+
+	&__description {
+		padding: 0 0 0 20px;
 	}
 
 	&__title {
 		margin-bottom: 30px;
+		color: var(--purple);
+		font-size: var(--font-size-32);
+		font-weight: var(--font-weight-700);
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		font-size: var(--font-size-18);
+		font-weight: var(--font-weight-300);
+		line-height: 1.3;
 	}
 }
