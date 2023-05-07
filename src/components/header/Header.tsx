@@ -5,7 +5,7 @@ import Navbar from '../navbar/Navbar';
 import './style.css';
 
 const Header = () => {
-  const isMobile = useMediaQuery(800);
+  const isMobile = useMediaQuery(850);
 
   const [isOpenMenu, setIsopenMenu] = useState(false);
 

@@ -13,7 +13,7 @@ const Navbar = ({ isMobile, isOpenMenu, changeVisibleNavMenu }: TProps) => {
   return (
     <nav className={`nav-menu ${isOpenMenu && isMobile ? 'isActive' : ''}`}>
       <div className="container">
-        <div className="nav-menu_row">
+        <div className="nav-menu__row">
           <MainMenu changeVisibleNavMenu={changeVisibleNavMenu} />
           <BtnDarkMode />
           <MobileFooter isOpenMenu={isOpenMenu} isMobile={isMobile} />
