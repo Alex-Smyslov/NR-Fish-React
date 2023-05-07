@@ -8,7 +8,7 @@ const profit = [
   {
     id: '1',
     alt: 'Toolchain',
-    text: 'Опыт работы с 2012 года',
+    text: 'Опыт работы на рынке продаж с 2012 года',
     img: toolchain,
   },
   {

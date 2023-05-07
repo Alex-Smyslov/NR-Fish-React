@@ -100,15 +100,9 @@ body {
 .container {
 	max-width: 90vw;
 	margin: 0 auto;
-	/* padding: 0 15px; */
 }
 
-/* section:first-child {
-	padding-top: 80px;
-} */
-
 section {
-	/* max-width: 100%; */
 	padding-bottom: 50px;
 }
 
@@ -122,131 +116,33 @@ section {
 	display: grid;
 }
 
-/* .overflow-hidden {
-	overflow: hidden;
-} */
-
-/* General */
-
-/* .container {
-	margin: 0 auto;
-	padding: 0 15px;
-	max-width: 1200px;
-}
-
-.none {
-	display: none !important;
-}
-
-.section {
-	padding: 70px 0;
-} */
-
-/* Btn */
-
-/* .btn {
-	display: inline-block;
-	height: 48px;
-	padding: 12px 28px;
-
-	border-radius: 5px;
-	background-color: var(--accent);
-	color: var(--white);
-	letter-spacing: 0.15px;
-	font-size: 16px;
-	font-weight: 500;
-
-	transition: opacity 0.2s ease-in;
-} */
-
-/* .btn:hover {
-	opacity: 0.8;
-}
-
-.btn:active {
-	position: relative;
-	top: 1px;
-} */
-
-/* Btn outline */
-
-/* .btn-outline {
-	display: flex;
-	column-gap: 10px;
-	align-items: center;
-
-	height: 48px;
-	padding: 12px 20px;
-
-	border-radius: 5px;
-	border: 1px solid #000;
-	background-color: #fff;
-	color: #000;
-
-	transition: opacity 0.2s ease-in;
-}
-
-.btn-outline:hover {
-	opacity: 0.8;
-}
-
-.btn-outline:active {
-	position: relative;
-	top: 1px;
-} */
-
-/* Content list */
-
-/* .content-list {
-	margin: 0 auto;
-	max-width: 570px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	row-gap: 40px;
-	text-align: center;
-}
-
-.content-list a {
-	color: var(--accent);
-}
-
-.content-list__item {
-	font-size: 18px;
-	line-height: 1.5;
-}
-
-.content-list__item p + p {
-	margin-top: 0.5em;
-} */
-
 /* ===================ADAPTIVE============================ */
 
-/* @media (max-width: 1200px) {
+/* @media (max-width: 1140px) {
 	.container {
 		max-width: 1000px;
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
 	.container {
 		max-width: 750px;
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
 	.container {
 		max-width: 750px;
 	}
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
 	.container {
 		max-width: 600px;
 	}
 }
 
-@media (max-width: 550px) {
+@media (max-width: 450px) {
 	.container {
 		max-width: 300px;
 	}
