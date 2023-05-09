@@ -1,0 +1,14 @@
+.aboutMap {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 15px;		
+
+	}
+
+@media (max-width: 900px) {
+	.aboutMap {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

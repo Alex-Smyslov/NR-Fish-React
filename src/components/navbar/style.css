@@ -37,3 +37,9 @@
 	display: block;
 	margin-bottom: 10px;
 }
+
+@media (max-width: 850px) {
+	.nav-menu__row {
+		flex-direction: column;
+	}
+}
