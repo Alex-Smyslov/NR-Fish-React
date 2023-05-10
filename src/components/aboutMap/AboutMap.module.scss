@@ -44,7 +44,6 @@
 	}
 
 	&__infoItem {
-		// min-width: 220px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -52,7 +51,11 @@
 
 		img {
 			max-width: 40px;
-			margin-right: 20px;
+			margin-right: 10px;
+		}
+
+		p{
+			padding-top: 10px;
 		}
 	}
 }
