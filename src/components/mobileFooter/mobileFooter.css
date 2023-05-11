@@ -5,6 +5,15 @@
 	z-index: 10;
 }
 
+.mobile__wrapp a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+.mobile__wrapp p {
+	font-size: var(--font-size-22);
+}
+
 .mobile__wrapp.isActive {
 	display: flex;
 	flex-direction: column;
@@ -15,9 +24,10 @@
 	width: 90vw;
 	padding-top: 15px;
 	border-top: 2px solid var(--purple);
-} 
+}
 
 .mobile__phone {
 	display: block;
+	margin-top: 10px;
 	margin-bottom: 10px;
 }
