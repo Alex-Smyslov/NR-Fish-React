@@ -8,3 +8,10 @@
 		margin: 0 auto;
 	}
 }
+
+@media screen and (max-width: 480px) {
+	.about__container {
+		padding: 0 15px;
+	}
+
+}
