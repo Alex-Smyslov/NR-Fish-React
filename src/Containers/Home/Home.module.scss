@@ -1,5 +1,6 @@
 .main {
 	width: 100%;
+	margin-bottom: -23px;
 	overflow: hidden;
 
 	&__banner {
@@ -19,7 +20,7 @@
 
 		button {
 			position: absolute;
-			bottom: 5%;
+			bottom: 10%;
 			left: 42%;
 		}
 	}
@@ -65,16 +66,25 @@
 
 @media screen and (max-width: 1190px) {}
 
-@media screen and (max-width: 890px) {}
+@media screen and (max-width: 890px) {
 
-@media screen and (max-width: 690px) {
 	.main__store {
 		display: none;
 	}
 
 	.main__wrapper button {
-		bottom: 5%;
+		bottom: 15%;
 		left: 0;
+	}
+}
+
+
+
+@media screen and (max-width: 690px) {
+	.main__wrapper button {
+		padding: 10px 15px;
+		font-weight: var(--font-weight-400);
+		font-size: var(--font-size-12);
 	}
 }
 
@@ -85,8 +95,7 @@
 	}
 
 	.main__wrapper button {
-		padding: 10px 15px;
-		font-weight: var(--font-weight-400);
-		font-size: var(--font-size-12);
+		bottom: 15%;
+		left: 0;
 	}
 }
