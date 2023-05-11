@@ -2,7 +2,13 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getProductById } from '../../store/app/effects';
-import { getProductByIdIsError, getProductByIdIsLoading, getProductByIdIsSuccess, getProductByIdSelector } from '../../store/app/selectors';
+import {
+	getProductByIdIsError,
+	getProductByIdIsLoading,
+	getProductByIdIsSuccess,
+	getProductByIdSelector
+} from '../../store/app/selectors';
+import styles from './ProductPage.module.scss';
 
 export const ProductPage = () => {
 	const params = useParams();
@@ -27,7 +33,7 @@ export const ProductPage = () => {
 		<>
 			{isSuccess &&
 				product.length > 0 &&
-				<div>
+				<div className={styles.container}>
 					<span>{`Hi i am product number - ${params.id ?? ''} `}</span>
 					<span>{product.img}</span>
 					<span>{product.title}</span>
