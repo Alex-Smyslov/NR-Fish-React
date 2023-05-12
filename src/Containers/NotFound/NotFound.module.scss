@@ -1,26 +1,18 @@
-.notFound__grid {
-	display: grid;
-	position: relative;
-	grid-template-rows: 1fr 2fr;
-	grid-template-areas:
-		"A"
-		"B";
-	gap: var(--m24);
-	align-items: center;
-	justify-items: center;
-	text-align: center;
-	padding: var(--m36) var(--m12);
-}
-
-.notFound__image {
-	grid-area: A;
+.notFound {
 	width: 100%;
-}
+	margin: 0 auto;
 
-.notFound__bot {
-	grid-area: B;
-}
+	&__container {
+		max-width: 70vw;
+		padding-top: 80px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-.notFound__image img {
-	right: 20px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
