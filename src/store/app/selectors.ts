@@ -5,23 +5,35 @@ const getProductsState = (state: TState) => state.app;
 const getImagesState = (state: TState) => state.app;
 
 export const getProductsListSelector = createSelector(
-	getProductsState,
-	({ products }) => products.data,
+  getProductsState,
+  ({ products }) => products.data,
 );
 export const getProductsListIsError = createSelector(
-	getProductsState,
-	({ products }) => products.isError,
+  getProductsState,
+  ({ products }) => products.isError,
 );
 export const getProductsListIsSuccess = createSelector(
-	getProductsState,
-	({ products }) => products.isSuccess,
+  getProductsState,
+  ({ products }) => products.isSuccess,
 );
 export const getProductsListIsLoading = createSelector(
-	getProductsState,
-	({ products }) => products.isLoading,
+  getProductsState,
+  ({ products }) => products.isLoading,
 );
 
-export const getProductByIdSelector = createSelector(getImagesState, ({ currentProduct }) => currentProduct.data);
-export const getProductByIdIsError = createSelector(getImagesState, ({ currentProduct }) => currentProduct.isError);
-export const getProductByIdIsSuccess = createSelector(getImagesState, ({ currentProduct }) => currentProduct.isSuccess);
-export const getProductByIdIsLoading = createSelector(getImagesState, ({ currentProduct }) => currentProduct.isLoading);
+export const getProductByIdSelector = createSelector(
+  getImagesState,
+  ({ currentProduct }) => currentProduct.data,
+);
+export const getProductByIdIsError = createSelector(
+  getImagesState,
+  ({ currentProduct }) => currentProduct.isError,
+);
+export const getProductByIdIsSuccess = createSelector(
+  getImagesState,
+  ({ currentProduct }) => currentProduct.isSuccess,
+);
+export const getProductByIdIsLoading = createSelector(
+  getImagesState,
+  ({ currentProduct }) => currentProduct.isLoading,
+);
