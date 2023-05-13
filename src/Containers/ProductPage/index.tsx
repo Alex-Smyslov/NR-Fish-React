@@ -10,15 +10,6 @@ import {
 } from '../../store/app/selectors';
 import styles from './ProductPage.module.scss';
 
-// interface IProps {
-//   id: number;
-//   img: string;
-//   title: string;
-//   description: string;
-//   price: number;
-//   rating: number;
-// }
-
 export const ProductPage = () => {
   const params = useParams();
   const navigate = useNavigate();
@@ -40,7 +31,8 @@ export const ProductPage = () => {
 
   return (
     <>
-      {isSuccess && product.length > 0 && (
+      {isError && <span>Error</span>}
+      {isSuccess && product && (
         <div className={styles.container}>
           <span>{`Hi i am product number - ${params.id ?? ''} `}</span>
           <span>{product.img}</span>
@@ -48,57 +40,10 @@ export const ProductPage = () => {
           <span>{product.description}</span>
           <span>{product.price}</span>
           <span>{product.rating}</span>
-          <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum expedita alias harum
-            quasi, esse, quibusdam voluptas beatae eaque eveniet sit vel nesciunt laborum tempore at
-            pariatur error commodi totam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quos rerum expedita alias harum quasi, esse, quibusdam voluptas beatae eaque eveniet sit
-            vel nesciunt laborum tempore at pariatur error commodi totam. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos rerum expedita alias harum quasi, esse, quibusdam
-            voluptas beatae eaque eveniet sit vel nesciunt laborum tempore at pariatur error commodi
-            totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum expedita
-            alias harum quasi, esse, quibusdam voluptas beatae eaque eveniet sit vel nesciunt
-            laborum tempore at pariatur error commodi totam. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quos rerum expedita alias harum quasi, esse, quibusdam voluptas beatae
-            eaque eveniet sit vel nesciunt laborum tempore at pariatur error commodi totam. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Quos rerum expedita alias harum
-            quasi, esse, quibusdam voluptas beatae eaque eveniet sit vel nesciunt laborum tempore at
-            pariatur error commodi totam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quos rerum expedita alias harum quasi, esse, quibusdam voluptas beatae eaque eveniet sit
-            vel nesciunt laborum tempore at pariatur error commodi totam. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos rerum expedita alias harum quasi, esse, quibusdam
-            voluptas beatae eaque eveniet sit vel nesciunt laborum tempore at pariatur error commodi
-            totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum expedita
-            alias harum quasi, esse, quibusdam voluptas beatae eaque eveniet sit vel nesciunt
-            laborum tempore at pariatur error commodi totam. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quos rerum expedita alias harum quasi, esse, quibusdam voluptas beatae
-            eaque eveniet sit vel nesciunt laborum tempore at pariatur error commodi totam. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Quos rerum expedita alias harum
-            quasi, esse, quibusdam voluptas beatae eaque eveniet sit vel nesciunt laborum tempore at
-            pariatur error commodi totam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quos rerum expedita alias harum quasi, esse, quibusdam voluptas beatae eaque eveniet sit
-            vel nesciunt laborum tempore at pariatur error commodi totam. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos rerum expedita alias harum quasi, esse, quibusdam
-            voluptas beatae eaque eveniet sit vel nesciunt laborum tempore at pariatur error commodi
-            totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rerum expedita
-            alias harum quasi, esse, quibusdam voluptas beatae eaque eveniet sit vel nesciunt
-            laborum tempore at pariatur error commodi totam. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Quos rerum expedita alias harum quasi, esse, quibusdam voluptas beatae
-            eaque eveniet sit vel nesciunt laborum tempore at pariatur error commodi totam. Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Quos rerum expedita alias harum
-            quasi, esse, quibusdam voluptas beatae eaque eveniet sit vel nesciunt laborum tempore at
-            pariatur error commodi totam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Quos rerum expedita alias harum quasi, esse, quibusdam voluptas beatae eaque eveniet sit
-            vel nesciunt laborum tempore at pariatur error commodi totam. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quos rerum expedita alias harum quasi, esse, quibusdam
-            voluptas beatae eaque eveniet sit vel nesciunt laborum tempore at pariatur error commodi
-            totam.
-          </span>
-          <button onClick={goBack}>Назад</button>
+          <button onClick={goBack}>Go back</button>
         </div>
       )}
       {isLoading && <span>Loading...</span>}
-      {isError && <span>Error</span>}
     </>
   );
 };

@@ -2,7 +2,6 @@ import { createSelector } from '@reduxjs/toolkit';
 import { type TState } from '../configureStore';
 
 const getProductsState = (state: TState) => state.app;
-const getImagesState = (state: TState) => state.app;
 
 export const getProductsListSelector = createSelector(
   getProductsState,
@@ -22,18 +21,18 @@ export const getProductsListIsLoading = createSelector(
 );
 
 export const getProductByIdSelector = createSelector(
-  getImagesState,
+  getProductsState,
   ({ currentProduct }) => currentProduct.data,
 );
 export const getProductByIdIsError = createSelector(
-  getImagesState,
+  getProductsState,
   ({ currentProduct }) => currentProduct.isError,
 );
 export const getProductByIdIsSuccess = createSelector(
-  getImagesState,
+  getProductsState,
   ({ currentProduct }) => currentProduct.isSuccess,
 );
 export const getProductByIdIsLoading = createSelector(
-  getImagesState,
+  getProductsState,
   ({ currentProduct }) => currentProduct.isLoading,
 );
