@@ -27,7 +27,7 @@ export const Products = () => {
       <div className={styles.productList}>
         {isSuccess &&
           products.length > 0 &&
-          products.map(({ id, img, title, description, price }) => (
+          products.map(({ id, img, title, description, price, rating }) => (
             <ProductCard
               key={id}
               id={id}
@@ -35,6 +35,7 @@ export const Products = () => {
               title={title}
               description={description}
               price={price}
+              rating={rating}
             />
           ))}
       </div>

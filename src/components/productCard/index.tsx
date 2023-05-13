@@ -9,9 +9,10 @@ interface IProps {
   title: string;
   description: string;
   price: number;
+  rating: number;
 }
 
-export const ProductCard = ({ id, img, title, description, price }: IProps) => {
+export const ProductCard = ({ id, img, title, description, price, rating }: IProps) => {
   return (
     <>
       <div className={styles.card}>
@@ -19,6 +20,9 @@ export const ProductCard = ({ id, img, title, description, price }: IProps) => {
         <NavLink className={styles.card__link} to={`${routes.CATALOG}/${id}`}>
           <span className={styles.card__label}>{title}</span>
         </NavLink>
+        <p className={styles.card__rating}>
+          Рейтинг: <span>{rating}</span>
+        </p>
         <details className={styles.card__description}>
           <summary className={styles.card__description_header}>Описание</summary>
           <p className={styles.card__description_content}>{description}</p>
