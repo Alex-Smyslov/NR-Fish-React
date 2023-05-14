@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { TailSpin } from 'react-loader-spinner';
 import { ProductCard } from '../productCard';
 import styles from './ProductsPage.module.scss';
 import { useDispatch, useSelector } from 'react-redux';
@@ -39,7 +40,20 @@ export const Products = () => {
             />
           ))}
       </div>
-      {isLoading && <span className={styles.loading}>Loading...</span>}
+      {isLoading && (
+        <div className={styles.productSpinner}>
+          <TailSpin
+            height="80"
+            width="80"
+            color="#5c62ec"
+            ariaLabel="tail-spin-loading"
+            radius="1"
+            wrapperStyle={{}}
+            wrapperClass=""
+            visible={true}
+          />
+        </div>
+      )}
       {isError && <span className={styles.error}>Error</span>}
     </>
   );

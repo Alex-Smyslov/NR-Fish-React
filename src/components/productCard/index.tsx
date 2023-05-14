@@ -23,10 +23,6 @@ export const ProductCard = ({ id, img, title, description, price, rating }: IPro
         <p className={styles.card__rating}>
           Рейтинг: <span>{rating}</span>
         </p>
-        <details className={styles.card__description}>
-          <summary className={styles.card__description_header}>Описание</summary>
-          <p className={styles.card__description_content}>{description}</p>
-        </details>
         <p className={styles.card__price}>
           Цена: <span>{price}</span> руб.
         </p>
