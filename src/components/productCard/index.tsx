@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './ProductCard.module.scss';
 import { NavLink } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
+import Rating from '../rating/Rating';
 
 interface IProps {
   id: number;
@@ -12,7 +13,7 @@ interface IProps {
   rating: number;
 }
 
-export const ProductCard = ({ id, img, title, description, price, rating }: IProps) => {
+export const ProductCard = ({ id, img, title, price, rating }: IProps) => {
   return (
     <>
       <div className={styles.card}>
@@ -20,6 +21,7 @@ export const ProductCard = ({ id, img, title, description, price, rating }: IPro
         <NavLink className={styles.card__link} to={`${routes.CATALOG}/${id}`}>
           <span className={styles.card__label}>{title}</span>
         </NavLink>
+        <Rating rating={rating} />
         <p className={styles.card__rating}>
           Рейтинг: <span>{rating}</span>
         </p>

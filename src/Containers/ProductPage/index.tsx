@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { TailSpin } from 'react-loader-spinner';
+import Rating from '../../components/rating/Rating';
 import { useParams } from 'react-router-dom';
 import { getProductById } from '../../store/app/effects';
 import {
@@ -38,6 +39,7 @@ export const ProductPage = () => {
               </div>
               <div className={styles.product__product}>
                 <p className={styles.product__title}>{product.title}</p>
+                <Rating rating={product.rating} />
                 <p className={styles.product__rating}>
                   Рейтинг: <span>{product.rating}</span>
                 </p>
