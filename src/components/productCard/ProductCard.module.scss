@@ -25,35 +25,37 @@
 		}
 	}
 
+	&__info {
+		padding: 10px;
+	}
+
 	&__link {
-		position: relative;
 		height: 60px;
 		overflow: hidden;
+	}
 
-		span {
-			font-size: var(--m18);
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			padding: 10px
+	&__label {
+		font-size: var(--m18);
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		padding-top: 10px
+	}
+
+	&__rating {
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+
+		&_number {
+			position: relative;
+			top: 6px;
 		}
-
-	}
-
-	&__description {
-		flex: 1 1 auto;
-		font-size: var(--m12);
-		padding: 10px
-	}
-
-	&__description_content {
-		padding-top: 15px;
 	}
 
 	&__price {
 		font-size: var(--m18);
-		padding: 10px;
+		padding-top: 10px;
 
 		span {
 			color: var(--purple);
@@ -63,23 +65,6 @@
 	}
 
 
-}
-
-
-
-.gallery__card {
-	position: relative;
-	height: 300px;
-	cursor: pointer;
-	overflow: hidden;
-}
-
-.gallery__card-pic {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: 0.2s;
 }
 
 
