@@ -1,4 +1,4 @@
-import './mobileFooter.css';
+import './mobileFooter.scss';
 
 interface TProps {
   isOpenMenu: boolean;

@@ -1,7 +1,7 @@
 import BtnDarkMode from '../btnDarkMode/BtnDarkMode';
 import MainMenu from '../mainMenu/MainMenu';
 import MobileFooter from '../mobileFooter/MobileFooter';
-import './style.css';
+import './style.scss';
 
 interface TProps {
   isMobile: boolean;
