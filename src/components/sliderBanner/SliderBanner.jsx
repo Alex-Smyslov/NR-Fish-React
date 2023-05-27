@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper';
-import './SliderBanner.css';
+import './SliderBanner.scss';
 
 // eslint-disable-next-line react/prop-types
 function SliderBanner({ slides }) {

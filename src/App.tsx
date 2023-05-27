@@ -9,7 +9,7 @@ import ScrollToTop from './utils/scrollToTop';
 import Header from './components/header/Header';
 import { routes } from './utils/constants/routes';
 import { ProductPage } from './Containers/ProductPage';
-import './styles/main.css';
+import './styles/main.scss';
 
 function App() {
   return (

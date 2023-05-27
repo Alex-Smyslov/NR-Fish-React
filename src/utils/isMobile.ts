@@ -17,7 +17,7 @@ export const useWindowWidth = () => {
   return { windowWidth, handleResize };
 };
 
-export const useMediaQuery = (maxWidth) => {
+export const useMediaQuery = (maxWidth: number) => {
   const {
     windowWidth: { windowWidth },
     handleResize,
