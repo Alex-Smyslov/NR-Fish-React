@@ -67,3 +67,43 @@
 	}
 
 }
+
+@media screen and (max-width: 1040px) {
+	.product {
+		&__container {
+			max-width: 500px;
+			flex-direction: column;
+		}
+		
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.product {
+		&__container {
+			font-size: var(--m12);
+			max-width: 300px;
+		}
+		&__image {
+			min-width: 250px;
+	}
+	button {
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+}
+}
+
+@media screen and (max-width: 390px) {
+	.product {
+		padding-left: 15px;
+		padding-right: 15px;
+		&__container {
+			font-size: var(--m12);
+			max-width: 270px;
+		}
+		&__image {
+			min-width: 190px;
+	}
+}
+}

@@ -3,6 +3,7 @@ import styles from './ProductCard.module.scss';
 import { NavLink } from 'react-router-dom';
 import { routes } from '../../utils/constants/routes';
 import Rating from '../rating/Rating';
+import BtnMain from '../btnMain/BtnMain';
 
 interface IProps {
   id: number;
@@ -29,6 +30,7 @@ export const ProductCard = ({ id, img, title, price, rating }: IProps) => {
           <p className={styles.card__price}>
             Цена: <span>{price}</span> руб.
           </p>
+          <BtnMain text={'Купить'} to={'/catalog'} />
         </div>
       </div>
     </>

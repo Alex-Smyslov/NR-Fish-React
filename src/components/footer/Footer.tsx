@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import Logotype from '../logotype/Logotype';
 import MainMenu from '../mainMenu/MainMenu';
-import './Footer.css';
+import './Footer.scss';
 
 const Footer = () => {
   const date = new Date();

@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import './MainMenu.css';
+import './MainMenu.scss';
 
 interface TProps {
   changeVisibleNavMenu?: () => void;

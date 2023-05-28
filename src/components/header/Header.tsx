@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useMediaQuery } from '../../utils/isMobile';
 import Logotype from '../logotype/Logotype';
 import Navbar from '../navbar/Navbar';
-import './style.css';
+import './style.scss';
 
 const Header = () => {
   const isMobile = useMediaQuery(850);

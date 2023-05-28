@@ -3,7 +3,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from 'swiper';
 import 'swiper/swiper-bundle.min.css';
-import './Slider.css';
+import './Slider.scss';
 
 // eslint-disable-next-line react/prop-types
 function Slider({ slides }) {
