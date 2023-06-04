@@ -54,7 +54,12 @@
 
 @media (max-width: 1140px) {
 	.aboutStore {
-		grid-template-columns: repeat(1, 1fr);
+		display: flex;
+		flex-direction: column-reverse;
+
+		span {
+			display: none;
+		}
 
 	}
 }

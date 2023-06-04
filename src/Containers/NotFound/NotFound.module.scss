@@ -16,3 +16,10 @@
 		object-fit: cover;
 	}
 }
+
+@media screen and (max-width: 690px) {
+
+	.notFound button {
+		padding: 10px 15px;
+	}
+}

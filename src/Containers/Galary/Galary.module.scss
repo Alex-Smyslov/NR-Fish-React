@@ -26,12 +26,6 @@
 	}
 }
 
-
-
-
-
-
-
 /* Adaptive */
 
 @media screen and (max-width: 1100px) {
@@ -54,7 +48,8 @@
 
 @media screen and (max-width: 480px) {
 	.galary__container {
-		padding: 0 15px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 }
