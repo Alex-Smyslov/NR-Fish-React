@@ -12,3 +12,10 @@
 		background: linear-gradient(89.99deg, var(--purple) 0%, #007733 80%);
 	}
 }
+
+@media screen and (max-width: 690px) {
+
+	.sectionTitle {
+		font-size: var(--font-size-32);
+	}
+}
