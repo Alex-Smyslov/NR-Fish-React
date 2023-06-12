@@ -18,13 +18,18 @@
 	}
 
 	&__image {
+		display: flex;
+		align-items: center;
 		position: relative;
 		padding: 20px;
 		min-width: 350px;
 
+
 		img {
+			top: 50%;
 			height: 100%;
 			border-radius: 8px;
+			max-height: 350px;
 		}
 	}
 
@@ -40,6 +45,10 @@
 		height: 60px;
 		overflow: hidden;
 		font-size: var(--m24);
+	}
+
+	&__rating {
+		margin-top: 15px;
 	}
 
 	&__description {
@@ -68,13 +77,16 @@
 
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 850px) {
 	.product {
 		&__container {
 			max-width: 500px;
 			flex-direction: column;
 		}
 		
+		img {
+			max-height: 550px;
+		}
 	}
 }
 
